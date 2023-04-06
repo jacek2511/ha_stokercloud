@@ -35,3 +35,4 @@ class StokerCloudControllerMixin:
         if self.client_key:
             self._state = getattr(self.controller_data, self.client_key)
         logger.debug("New state %s" % self._state)
+
