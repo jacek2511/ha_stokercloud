@@ -14,6 +14,6 @@ You can install the plugin via HACS using the following steps
 
 # Adding the integration
 
-When you add the integration, an empty field will appear. You need to enter your Stoker Cloud username.
+When you add the integration, an empty field will appear. You need to enter your StokerCloud username.
 
 Currently the integration is read-only so you do not need to enter your password
