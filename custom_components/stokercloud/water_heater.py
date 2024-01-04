@@ -8,8 +8,8 @@ import logging
     WaterHeaterEntity,
 )"""
 from homeassistant.components.water_heater import (
-    AWAY_MODE,
-    OPERATION_MODE,
+    WaterHeaterEntityFeature.AWAY_MODE,
+    WaterHeaterEntityFeature.OPERATION_MODE,
     WaterHeaterEntity,
 )
 from homeassistant.const import PRECISION_TENTHS, PRECISION_WHOLE, STATE_OFF, STATE_ON
