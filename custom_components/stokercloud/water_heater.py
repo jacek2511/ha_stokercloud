@@ -2,9 +2,14 @@ from __future__ import annotations
 from homeassistant.const import CONF_USERNAME, TEMP_CELSIUS
 import logging
 
-from homeassistant.components.water_heater import (
+"""from homeassistant.components.water_heater import (
     SUPPORT_AWAY_MODE,
     SUPPORT_OPERATION_MODE,
+    WaterHeaterEntity,
+)"""
+from homeassistant.components.water_heater import (
+    WaterHeaterEntityFeature.AWAY_MODE,
+    WaterHeaterEntityFeature.OPERATION_MODE,
     WaterHeaterEntity,
 )
 from homeassistant.const import PRECISION_TENTHS, PRECISION_WHOLE, STATE_OFF, STATE_ON
