@@ -132,13 +132,13 @@ class StokerCloudControllerSensor(StokerCloudControllerMixin, SensorEntity):
     def native_unit_of_measurement(self):
         if self._state and isinstance(self._state, Value):
             return {
-                Unit.KWH: UnitOfPower.KILO_WATT,
-                Unit.DEGREE: TEMP_CELSIUS,
-                Unit.KILO_GRAM: UnitOfMass.KILOGRAMS,
-                Unit.GRAM: UnitOfMass.GRAMS,
+                Unit.KWH: KILO_WATT,
+                Unit.DEGREE: CELSIUS,
+                Unit.KILO_GRAM: KILOGRAMS,
+                Unit.GRAM: GRAMS,
                 Unit.PERCENT: PERCENTAGE,
-                Unit.PASCAL: UnitOfPressure.PA,
-		Unit.M3H: UnitOfVolumeFlowRate.CUBIC_METERS_PER_HOUR,
+                Unit.PASCAL: PA,
+		Unit.M3H: CUBIC_METERS_PER_HOUR,
             }.get(self._state.unit)
 
 """
