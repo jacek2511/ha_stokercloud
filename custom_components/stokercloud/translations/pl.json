@@ -4,7 +4,7 @@
       "confirm": {
         "description": "Ta integracja używa nieoficjalnego API do pobierania danych ze stokercloud.dk. Czy chcesz kontynuować?"
       },
-      "init": {
+      "user": {
         "title": "Wprowadź parametry połączenia do stokercloud.dk.",
         "description": "{error_info}",
         "data": {
