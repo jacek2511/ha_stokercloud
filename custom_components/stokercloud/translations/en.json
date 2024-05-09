@@ -1,0 +1,16 @@
+{
+  "config": {
+    "step": {
+      "confirm": {
+        "description": "This integration uses unofficial API to get energy usage data from stokerclod.dk. Do you want to continue?"
+      },
+      "user": {
+        "title": "Enter the connection parameters to the stokercloud.dk.",
+        "description": "We will add sensors to get data from stokercloud.dk.\n\n {error_info} ",
+        "data": {
+          "username": "Username:"
+        }
+      }
+    }
+  }
+}
