@@ -2,13 +2,13 @@
   "config": {
     "step": {
       "confirm": {
-        "description": "This integration uses unofficial API to get energy usage data from stokerclod.dk. Do you want to continue?"
+        "description": "Ta integracja używa nieoficjalnego API do pobierania danych ze stokercloud.dk. Czy chcesz kontynuować?"
       },
       "user": {
-        "title": "Enter the connection parameters to the stokercloud.dk.",
-        "description": "We will add sensors to get data from stokercloud.dk.\n\n {error_info} ",
+        "title": "Wprowadź parametry połączenia.",
+        "description": "Dodamy czujniki umożliwiające prezentację danych ze stokercloud.dk.\n\n",,
         "data": {
-          "username": "Username:"
+          "username": "Nazwa użytkownika"
         }
       }
     }
