@@ -6,7 +6,7 @@
       },
       "user": {
         "title": "Wprowadź parametry połączenia.",
-        "description": "Dodamy czujniki umożliwiające prezentację danych ze stokercloud.dk.\n\n",,
+        "description": "Dodamy czujniki umożliwiające prezentację danych ze stokercloud.dk.\n\n",
         "data": {
           "username": "Nazwa użytkownika"
         }
