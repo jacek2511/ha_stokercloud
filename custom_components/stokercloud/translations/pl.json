@@ -1,16 +1,16 @@
 {
-  "config": {
-    "step": {
-      "confirm": {
-        "description": "Ta integracja używa nieoficjalnego API do pobierania danych ze stokercloud.dk. Czy chcesz kontynuować?"
-      },
-      "user": {
-        "title": "Wprowadź parametry połączenia.",
-        "description": "Dodamy czujniki umożliwiające prezentację danych ze stokercloud.dk.\n\n",
-        "data": {
-          "username": "Nazwa użytkownika"
+    "config": {
+        "step": {
+            "confirm": {
+                "description": "Ta integracja używa nieoficjalnego API do pobierania danych ze stokercloud.dk. Czy chcesz kontynuować?"
+            },
+            "user": {
+                "title": "Wprowadź parametry połączenia.",
+                "description": "Dodamy czujniki umożliwiające prezentację danych ze stokercloud.dk.\n\n",
+                "data": {
+                    "username": "Nazwa użytkownika"
+                }
+            }
         }
-      }
     }
-  }
 }
