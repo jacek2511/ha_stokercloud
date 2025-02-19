@@ -1,14 +1,18 @@
+
 """
 NBE StokerCloud
 """
 
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.typing import ConfigType
-from .const import DOMAIN, PLATFORMS
+from .const import DOMAIN
 from homeassistant.config_entries import ConfigEntry
 import asyncio
 from stokercloud.client import Client as StokerCloudClient
 from homeassistant.const import CONF_USERNAME
+from homeassistant.const import Platform
+
+PLATFORMS: list[Platform] = [Platform.SENSOR, Platform.WATER_HEATER]
 
 
 async def async_setup(hass: HomeAssistant, config: dict):
@@ -20,10 +24,7 @@ async def async_setup(hass: HomeAssistant, config: dict):
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
     hass.data[DOMAIN][entry.entry_id] = StokerCloudClient(entry.data[CONF_USERNAME])
 
-    for component in PLATFORMS:
-        hass.async_create_task(
-            hass.config_entries.async_forward_entry_setup(entry, component)
-        )
+    await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
     return True
 
 
